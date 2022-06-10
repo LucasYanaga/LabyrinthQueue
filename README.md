@@ -10,24 +10,29 @@ programa passa o desenho para uma matriz e vai procurar por um "E" e um "S" para
 <br>
 
 <p> Iniciando a solução...</p>
-<img src="https://github.com/LucasYanaga/LabyrinthStack/blob/master/img/img.png">
+<img src="https://github.com/LucasYanaga/LabyrinthQueue/blob/master/images/img1.PNG">
 <br>
 
-<p>Aqui podemos ver que o programa decidiu ir para cima por conta da ordem dos "IFs" na hora de analisar as 4 direções.
- Ele analisará as direções nessa ordem: UP, DOWN, LEFT, RIGHT. E por conta disso, ele andou para cima ao invés de ir para direita.
+<p>Aqui temos a primeira ação, onde o usuário escolheu o movimento "D"(Down). O comando dele será enfileirado e em seguida,
+   o labirinto será printado. 
 </p>
-<img src="https://github.com/LucasYanaga/LabyrinthStack/blob/master/img/img_1.png">
+<img src="https://github.com/LucasYanaga/LabyrinthQueue/blob/master/images/img2.PNG">
 <br>
 
-<p>Aqui ele encontrou um dead end e desempilhou a coordenada.</p>
-<img src="https://github.com/LucasYanaga/LabyrinthStack/blob/master/img/img_2.png">
+<p>Caso o usuário tente um movimento errado, o labirinto e painel serão printados novamente com a mensagem de movimento inválido.</p>
+<img src="https://github.com/LucasYanaga/LabyrinthQueue/blob/master/images/img6.PNG">
 <br>
 
-<p>Assim sucessivamente até encontrar um caminho livre e que não tenha sido percorrido</p>
-<img src="https://github.com/LucasYanaga/LabyrinthStack/blob/master/img/img_3.png">
+<p>Assim sucessivamente até terminar o labirinto...</p>
+<img src="https://github.com/LucasYanaga/LabyrinthQueue/blob/master/images/img3.PNG">
 
-<p>O caminho inteiro percorrido pelo programa até o "S"</p>
-<img src="https://github.com/LucasYanaga/LabyrinthStack/blob/master/img/img_4.png">
+<p>Após terminar o caminho, será utilizado o comando "GO", onde ele vai desenfileirando os comandos e mostrando o caminho representado pelo  "*"</p>
+<img src="https://github.com/LucasYanaga/LabyrinthQueue/blob/master/images/img4.PNG">
 
-<p>Após terminar, ele mostra a pilha com as coordenadas do caminho que ele tomou até a saída.</p>
-<img src="https://github.com/LucasYanaga/LabyrinthStack/blob/master/img/img_5.png">
+<p>Xaso a solução esteja correta será printado "GG!" e caso contrário, "DEFEAT!". Logo em seguida será perguntado se o usuário
+deseja jogar novamente. Se sim, o programa utilizara o mesmo método do comando "X"(RESET). Se não, o programa apenas finalizara. 
+</p>
+<img src="https://github.com/LucasYanaga/LabyrinthQueue/blob/master/images/img5.PNG">
+<img src="https://github.com/LucasYanaga/LabyrinthQueue/blob/master/images/img7.PNG">
+
+
