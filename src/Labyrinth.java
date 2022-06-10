@@ -166,6 +166,7 @@ public class Labyrinth {
             case "U":
                 if (Objects.equals(this.laby[up.x][up.y], " ") || this.laby[up.x][up.y].equals("S")) {
                     this.laby[up.x][up.y] = "-";
+                    this.laby[this.current.x][this.current.y] = " ";
                     this.current = up;
                     return up;
                 }else{
@@ -174,6 +175,7 @@ public class Labyrinth {
             case "D":
                 if (Objects.equals(this.laby[down.x][down.y], " ") || this.laby[down.x][down.y].equals("S")) {
                     this.laby[down.x][down.y] = "-";
+                    this.laby[this.current.x][this.current.y] = " ";
                     this.current = down;
                     return down;
                 }else{
@@ -182,6 +184,7 @@ public class Labyrinth {
             case "L":
                 if (Objects.equals(this.laby[left.x][left.y], " ") || this.laby[left.x][left.y].equals("S")) {
                     this.laby[left.x][left.y] = "-";
+                    this.laby[this.current.x][this.current.y] = " ";
                     this.current = left;
                     return left;
                 }else{
@@ -190,6 +193,7 @@ public class Labyrinth {
             case "R":
                 if (Objects.equals(this.laby[right.x][right.y], " ") || this.laby[right.x][right.y].equals("S")) {
                     this.laby[right.x][right.y] = "-";
+                    this.laby[this.current.x][this.current.y] = " ";
                     this.current = right;
                     return right;
                 }else{
@@ -220,6 +224,7 @@ public class Labyrinth {
             queue.remove();
 
             this.printLaby();
+            System.out.println("\n \n \n \n \n");
             MILLISECONDS.sleep(500);
         }
 
